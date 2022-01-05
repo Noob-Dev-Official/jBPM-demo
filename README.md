@@ -2,14 +2,14 @@
 
 ## credentials
 
-USER        PASSWORD    ROLE
-*************************************************
-wbadmin     wbadmin     admin,analyst,user,process-admin,kie-server
-krisv       krisv       admin,analyst,user,process-admin,kie-server
-john        john        analyst,Accounting,PM,kie-server
-sales-rep   sales-rep   analyst,sales,kie-server
-katy        katy        analyst,HR,kie-server
-jack        jack        analyst,IT,kie-server
+|   USER      |   PASSWORD   |    ROLE
+|-------------|--------------|---------------------------------------------------|
+|   wbadmin   |   wbadmin    |    admin,analyst,user,process-admin,kie-server    |
+|   krisv     |   krisv      |    admin,analyst,user,process-admin,kie-server    |
+|   john      |   john       |    analyst,Accounting,PM,kie-server               |
+|   sales-rep |   sales-rep  |    analyst,sales,kie-server                       |
+|   katy      |  katy        |    analyst,HR,kie-server                          |
+|   jack      |  jack        |    analyst,IT,kie-server                          |
 
 ## URLs
 
