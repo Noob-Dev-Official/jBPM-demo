@@ -1,5 +1,8 @@
 version: '3.5'
 
+volumes:
+  jbpm-data:
+
 services:
   jbpm-app:
     image: jboss/jbpm-server-full:latest
@@ -8,4 +11,6 @@ services:
       - 8001:8001
     environment:
       - "JBPM_DB_DRIVER=postgres"
+    volumes:
+      - jbpm-data:/opt/jboss/wildfly/bin
 
