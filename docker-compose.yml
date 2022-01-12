@@ -1,13 +1,14 @@
 version: '3.5'
 
 volumes:
-  jbpm-postgres-data:
+  jbpm_postgres_data:
+  jbpm_data:
 
 services:
   postgres:
     image: postgres:latest
     volumes:
-      - jbpm-postgres-data:/var/lib/postgresql/data
+      - jbpm_postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: jbpm
       POSTGRES_USER: jbpm
@@ -21,6 +22,6 @@ services:
     environment:
       - "JBPM_DB_DRIVER=postgres"
       - "JBPM_DB_HOST=postgres"
-    # volumes:
-    #   - jbpm-data:/opt/jboss/wildfly/bin
+    volumes:
+      - jbpm_data:/opt/jboss/wildfly/bin
 
